@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amstrong</title>
+    <script language="javascript">
+      var n,
+        temp,
+        sum = 0,
+        r;
+      n = parseInt(window.prompt("Enter n value"));
+      temp = n;
+      while (n > 0) {
+        r = parseInt(n % 10);
+        sum = sum + r * r * r;
+        n = parseInt(n / 10);
+      }
+      if (temp == sum) {
+        document.write("Amstrong");
+      } else {
+        document.write("NOT");
+      }
+    </script>
+  </head>
+</html>
